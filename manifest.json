@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Whitepages Pro for Volusion",
+  "version": "1.0",
+
+  "description": "Browser Web Extension for Volusion. Adds Whitepages Pro Identity Check functionality to their webpage.",
+
+  "icons":
+  {
+    "48": "icons/WP-48.png",
+    "128": "icons/WP-120.png"
+  },
+
+  "content_scripts":
+  [
+    {
+      "matches": ["*://*admindetails_processorder.asp"],
+      "js": ["VolusionWP-WE.js"]
+    }
+  ]
+
+}
